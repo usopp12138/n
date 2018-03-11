@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务7静态页面</title>
+    <style>
+        body,h1,h2,p,ul,li{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+           list-style: none;
+        }
+        body{
+            font: 14px/1.4 Arial;
+            background-color:#fff2e3;
+            text-align: center;
+            color:#87968e;
+        }
+        .header h1{
+            font-size: 42px;
+            margin:30px 0;
+            font-family:Microsoft YaHei;
+            
+        }
+        .header p{
+            margin:10px 0;
+        }
+        .nav li,.code li{
+            display: inline-block;
+            margin: 35px 3px 40px;
+        }
+        .nav ul li a,.code a{
+            display: inline-block;
+            background-color:#72b890;
+            padding:5px 13px;
+            color:#fff;
+            border-radius: 5%;
+
+        }
+
+        .nav a:hover,.code a:hover{
+            opacity: 0.7;
+        }
+        .nav .first{
+            opacity: 0.7;
+        }
+        .footer a{
+            color:#72b890;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>我的项目</h1>
+        <p>一句话项目介绍</p>
+    </div>
+    <div class="nav">
+      <ul>
+          <li><a class="first" href="#">项目1</a></li>
+          <li><a href="#">项目2</a></li>
+          <li><a href="#">项目3</a></li>
+          <li><a href="#">项目4</a></li>
+          <li><a href="#">项目5</a></li>
+      </ul>
+    </div>
+    <div class="pic"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" alt="大象"></div>
+    <div class="code">
+        <ul>
+            <li><a href="#">查看源码</a></li>
+            <li><a href="#">使用说明</a></li>
+        </ul>
+    </div>
+    <p class="footer">作者：<a href="#">我</a></p>
+</body>
+</html>
