@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2018 by anonymous (http://js.jirengu.com/gizugacoju/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>菜单导航水平居中</title>
+<style id="jsbin-css">
+ul li {
+  list-style: none;
+}
+.nav {
+  background-color:#ccc;
+  padding:20px 0;
+  text-align:center;
+}
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+.nav ul{
+  display:inline-block;
+}
+.nav li {
+  float: left;
+}
+.nav li+li {
+  margin-left:10px;
+}
+.nav button {
+  color: #fff;
+  background-color: red;
+  padding:8px 18px;
+  font-size:18px;
+  border:none;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+ <div class="nav clearfix">
+   <ul class="clearfix">
+     <li><button>按钮</button></li>
+     <li><button>按钮</button></li>
+     <li><button>按钮</button></li>
+   </ul>
+ </div>
+</body>
+</html>

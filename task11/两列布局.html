@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列布局</title>
+    <style>
+    clearfix::after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+    .aside{
+        background-color:blue;
+        width:200px;
+        height:200px;
+        float:right;
+        margin-left:10px;
+    }
+    .main{
+        background-color:red;
+        height: 200px;
+        display:flow-root;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="layout clearfix">
+         <div class="aside"></div>
+         <div class="main"></div>
+    </div>
+
+</body>
+</html>
