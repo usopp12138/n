@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2018 by anonymous (http://js.jirengu.com/suzuguruxu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>边框三角形</title>
+<style id="jsbin-css">
+.box,.box1,.box2 {
+  width: 130px;
+  height: 60px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  position: relative;
+}
+.box::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: -21px;
+  left: 5px;
+}
+.box1:before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid red;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform:rotate(45deg);
+  position:absolute;
+  top:-10px;
+  left:120px;
+}
+.box2::before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position:absolute;
+  top:-21px;
+  left:5px;
+}
+.box2::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position:absolute;
+  top:-20px;
+  left:5px;
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
