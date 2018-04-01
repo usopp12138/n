@@ -182,8 +182,20 @@
         .intro dl dt {
             position: relative;
         }
-        .intro dl dt a img:hover {
-            opacity: 0.5;
+        .intro dl dt a:hover img {
+            opacity: 0.3;
+        }
+        .intro dl dt i {
+            display: none;
+        }
+        .intro dl dt a:hover i {
+            display: block;
+            font-size: 46px;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);     
         }
 
         .intro dl dd {
@@ -374,6 +386,9 @@
             widows: 100%;
             height: 100%;
         }
+        .contact-content a:hover .send {
+            opacity: 1;
+        }
         .send {
             width: 220px;
             height: 66px;
@@ -387,6 +402,7 @@
             left: 50%;
             top: 100%;
             margin-left: -110px;
+            opacity: 0.8;
         }
 
         /*footer*/
@@ -402,4 +418,7 @@
         .privacy a {
             color: rgb(0,155,219);
             margin: 0 5px;
+        }
+        .privacy a:hover {
+            text-decoration: underline;
         }
